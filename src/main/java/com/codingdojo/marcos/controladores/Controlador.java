@@ -69,7 +69,7 @@ public class Controlador {
 
     public String generarNumeroLicenciaUnico() {
         // Generar un número de licencia único basado en algún algoritmo o lógica
-        // Asegurarte de que este número no exista en la base de datos
+        // Asegurarse de que este número no exista en la base de datos
         String numeroDeLicencia = servicio.generarNumeroLicencia();
         while (servicio.existeNumeroDeLicencia(numeroDeLicencia)) {
             // Si el número ya existe, genera uno nuevo hasta que sea único
